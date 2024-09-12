@@ -22,4 +22,4 @@ jobs:
 
       - name: "step 2"
         run: |
-          echo $MY_VAR
+          echo $MY_VAL
