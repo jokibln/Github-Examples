@@ -1,0 +1,17 @@
+name: "Workflow commands"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "group logging"
+        run: |
+          echo "::group::My Group Message"
+          echo "Bla"
+          echo "Blubb"
+          echo "::endgroup::"
